@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="DineroIA: guía práctica para entender la inteligencia artificial y descubrir seis formas realistas de utilizarla para crear ingresos.">
+<meta name="keywords" content="inteligencia artificial, ganar dinero con IA, herramientas IA, automatización, freelance, productos digitales">
+<title>DineroIA — Aprende, crea y utiliza la IA</title>
+<style>
+:root{
+  --bg:#07111f; --bg2:#0b1728; --card:#0e1d31; --line:#1d334d;
+  --text:#edf5ff; --muted:#9fb0c5; --green:#27e0a3; --green2:#0fbf8a;
+  --blue:#65a9ff; --shadow:0 20px 60px rgba(0,0,0,.28);
+}
+*{box-sizing:border-box;scroll-behavior:smooth}
+body{margin:0;background:linear-gradient(180deg,#06101d 0%,#091525 45%,#07111f 100%);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.75}
+a{color:inherit;text-decoration:none}
+.container{width:min(1120px,92%);margin:auto}
+nav{position:sticky;top:0;z-index:20;background:rgba(6,16,29,.86);backdrop-filter:blur(18px);border-bottom:1px solid rgba(255,255,255,.07)}
+.navin{height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{font-weight:900;font-size:22px;letter-spacing:-.5px}.logo span{color:var(--green)}
+.navlinks{display:flex;gap:22px;color:#b8c8da;font-size:14px}.navlinks a:hover{color:var(--green)}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 18px;border-radius:12px;background:var(--green);color:#03150f;font-weight:800;border:0;box-shadow:0 8px 25px rgba(39,224,163,.16)}
+.hero{padding:105px 0 90px;position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;width:600px;height:600px;border-radius:50%;background:rgba(39,224,163,.08);filter:blur(80px);top:-250px;right:-180px}
+.badge{display:inline-block;border:1px solid rgba(39,224,163,.35);color:#75f0c4;background:rgba(39,224,163,.07);padding:6px 12px;border-radius:999px;font-size:13px;font-weight:700}
+h1{font-size:clamp(42px,6vw,76px);line-height:1.03;letter-spacing:-3px;max-width:850px;margin:22px 0}
+h1 span{color:var(--green)}
+.lead{font-size:20px;color:#b6c6d8;max-width:760px}
+.heroactions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.ghost{border:1px solid var(--line);padding:12px 18px;border-radius:12px;color:#dce7f2;font-weight:700}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:65px}.stat{background:rgba(14,29,49,.75);border:1px solid var(--line);border-radius:18px;padding:20px}.stat strong{font-size:25px;color:var(--green);display:block}.stat small{color:var(--muted)}
+section{padding:85px 0;border-top:1px solid rgba(255,255,255,.05)}
+.eyebrow{color:var(--green);font-size:13px;font-weight:900;text-transform:uppercase;letter-spacing:1.5px}
+h2{font-size:clamp(30px,4vw,46px);line-height:1.1;letter-spacing:-1.5px;margin:10px 0 16px}h3{font-size:22px;margin:0 0 10px}
+.sectionintro{color:var(--muted);max-width:760px;font-size:17px}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:35px}
+.card{background:linear-gradient(180deg,rgba(15,31,51,.95),rgba(9,22,38,.95));border:1px solid var(--line);border-radius:20px;padding:28px;box-shadow:var(--shadow);transition:.2s}
+.card:hover{transform:translateY(-3px);border-color:#2b4968}
+.number{width:38px;height:38px;border-radius:11px;display:grid;place-items:center;background:rgba(39,224,163,.1);color:var(--green);font-weight:900;margin-bottom:18px}
+p{color:#b4c3d4}.card p{margin:7px 0}.tag{display:inline-block;color:#9cc5ff;background:rgba(101,169,255,.09);border:1px solid rgba(101,169,255,.2);padding:3px 8px;border-radius:999px;font-size:12px;margin:10px 5px 0 0}
+.wide{display:grid;grid-template-columns:1.1fr .9fr;gap:22px;align-items:stretch}
+.panel{background:#091727;border:1px solid var(--line);border-radius:20px;padding:30px}
+.steps{counter-reset:item}.step{display:grid;grid-template-columns:42px 1fr;gap:14px;margin:22px 0}.stepnum{width:36px;height:36px;border-radius:50%;display:grid;place-items:center;background:var(--green);color:#03150f;font-weight:900}
+.callout{border-left:3px solid var(--green);background:rgba(39,224,163,.06);padding:18px 20px;margin:25px 0;border-radius:0 12px 12px 0}
+ul{padding-left:20px;color:#b4c3d4}li{margin:8px 0}
+footer{padding:50px 0 30px;border-top:1px solid var(--line);color:#8293a8}
+.footergrid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:30px}.footerlinks{display:grid;gap:7px}.footerlinks a:hover{color:var(--green)}
+.disclaimer{font-size:13px;color:#718196;margin-top:25px}
+@media(max-width:800px){.navlinks{display:none}.stats,.grid,.wide,.footergrid{grid-template-columns:1fr}.hero{padding-top:70px}h1{letter-spacing:-2px}.card{padding:23px}}
+</style>
+</head>
+<body>
+<nav>
+ <div class="container navin">
+  <a class="logo" href="#inicio">Dinero<span>IA</span></a>
+  <div class="navlinks">
+   <a href="#formas">6 formas</a><a href="#ia">Cómo funciona la IA</a><a href="#guia">Guía</a><a href="#sobre">Sobre nosotros</a><a href="#contacto">Contacto</a>
+  </div>
+  <a class="btn" href="#formas">Empezar</a>
+ </div>
+</nav>
+
+<header class="hero" id="inicio">
+ <div class="container">
+  <span class="badge">INTELIGENCIA ARTIFICIAL · GUÍAS PRÁCTICAS</span>
+  <h1>Aprende a usar la IA para crear <span>oportunidades.</span></h1>
+  <p class="lead">DineroIA explica de forma clara cómo funciona la inteligencia artificial y cómo puedes utilizarla para aprender habilidades, ofrecer servicios, crear productos y construir proyectos digitales.</p>
+  <div class="heroactions"><a class="btn" href="#formas">Descubrir las 6 formas →</a><a class="ghost" href="#ia">Entender la IA</a></div>
+  <div class="stats">
+   <div class="stat"><strong>6</strong><small>formas prácticas de utilizar la IA</small></div>
+   <div class="stat"><strong>1 objetivo</strong><small>aprender antes de intentar ganar</small></div>
+   <div class="stat"><strong>100%</strong><small>enfoque educativo y transparente</small></div>
+  </div>
+ </div>
+</header>
+
+<section id="formas">
+ <div class="container">
+  <div class="eyebrow">Oportunidades</div>
+  <h2>6 formas de ganar dinero con IA</h2>
+  <p class="sectionintro">La IA no es una máquina que imprime dinero. Es una herramienta que puede ayudarte a producir más rápido, investigar mejor, automatizar tareas y crear servicios que otras personas estén dispuestas a pagar.</p>
+  <div class="grid">
+   <article class="card"><div class="number">01</div><h3>Servicios freelance con IA</h3><p>Puedes utilizar IA para acelerar tareas de redacción, traducción, investigación, presentaciones, edición o asistencia virtual. El valor no está simplemente en copiar una respuesta: está en entregar un resultado útil, revisado y adaptado al cliente.</p><p><b>Ejemplo:</b> preparar descripciones de productos para una tienda y revisarlas manualmente antes de entregarlas.</p><span class="tag">Freelance</span><span class="tag">Servicios</span></article>
+   <article class="card"><div class="number">02</div><h3>Creación de contenido</h3><p>La IA puede ayudarte a investigar temas, organizar ideas, crear borradores y generar diferentes versiones de un contenido. Puedes crear un canal, una newsletter, un blog o contenido para redes sociales.</p><p>La diferencia está en aportar experiencia, opinión, ejemplos y edición humana. El contenido genérico tiene poco valor; el contenido útil y original puede construir una audiencia.</p><span class="tag">Contenido</span><span class="tag">Audiencia</span></article>
+   <article class="card"><div class="number">03</div><h3>Productos digitales</h3><p>Otra posibilidad es crear recursos digitales: plantillas, guías, hojas de cálculo, packs de prompts, materiales educativos o pequeños recursos para profesionales.</p><p>La IA puede ayudarte con la investigación, estructura y primera versión, mientras que tú debes comprobar la información, mejorar el diseño y definir para quién sirve el producto.</p><span class="tag">Productos</span><span class="tag">Escalable</span></article>
+   <article class="card"><div class="number">04</div><h3>Automatización para negocios</h3><p>Muchas empresas pierden tiempo en tareas repetitivas. Puedes aprender a diseñar flujos que conecten formularios, hojas de cálculo, correo electrónico, CRM y herramientas de IA.</p><p>Un buen servicio de automatización empieza detectando un problema concreto y calculando cuánto tiempo puede ahorrar. La tecnología debe solucionar el problema, no complicarlo.</p><span class="tag">Automatización</span><span class="tag">B2B</span></article>
+   <article class="card"><div class="number">05</div><h3>Webs y proyectos con IA</h3><p>La IA puede ayudarte a crear prototipos, páginas web, textos, componentes y pequeñas herramientas. Esto permite experimentar con ideas sin tener que programar cada línea desde cero.</p><p>Si conviertes una idea en una web útil para un público concreto, puedes monetizarla mediante servicios, suscripciones, afiliación o publicidad, siempre respetando las políticas de cada plataforma.</p><span class="tag">Web</span><span class="tag">No-code</span></article>
+   <article class="card"><div class="number">06</div><h3>Consultoría y formación</h3><p>Cuando desarrollas experiencia real en una herramienta o proceso, puedes enseñar a otras personas a utilizarlo. Esto puede hacerse mediante sesiones, talleres, documentación o formación online.</p><p>La clave es enseñar un resultado concreto: ahorrar tiempo, organizar información, mejorar un proceso o aprender una habilidad. No hace falta prometer resultados económicos garantizados.</p><span class="tag">Formación</span><span class="tag">Consultoría</span></article>
+  </div>
+ </div>
+</section>
+
+<section id="ia">
+ <div class="container">
+  <div class="eyebrow">Fundamentos</div>
+  <h2>¿Cómo funciona realmente la inteligencia artificial?</h2>
+  <p class="sectionintro">Entender lo básico te ayuda a utilizar estas herramientas con mejores expectativas y a detectar cuándo una respuesta necesita ser comprobada.</p>
+  <div class="wide" style="margin-top:35px">
+   <div class="panel">
+    <h3>De los datos a una respuesta</h3>
+    <p>Muchos sistemas modernos de IA utilizan modelos entrenados con grandes cantidades de datos. Durante el entrenamiento, el modelo aprende patrones de lenguaje, imágenes, código u otros tipos de información. Después, cuando recibe una entrada, utiliza esos patrones para producir una salida.</p>
+    <p>En un asistente de texto, por ejemplo, la respuesta se genera paso a paso según el contexto disponible. Esto no significa que el modelo “sepa” las cosas exactamente como una persona. Puede equivocarse, inventar información o interpretar mal una pregunta.</p>
+    <div class="callout"><b>Regla de oro:</b> cuanto más importante sea una información —dinero, leyes, salud, datos técnicos o decisiones empresariales— más importante es verificarla con fuentes fiables.</div>
+    <h3>¿Por qué un buen prompt importa?</h3>
+    <p>Una instrucción clara suele producir mejores resultados. Explica el objetivo, el público, el formato, las restricciones y, si es necesario, proporciona ejemplos. Después revisa y vuelve a iterar.</p>
+   </div>
+   <div class="panel">
+    <h3>Un flujo sencillo</h3>
+    <div class="steps">
+     <div class="step"><div class="stepnum">1</div><div><b>Define el problema</b><br><span style="color:#9fb0c5">¿Qué quieres conseguir exactamente?</span></div></div>
+     <div class="step"><div class="stepnum">2</div><div><b>Da contexto</b><br><span style="color:#9fb0c5">Añade información, público y restricciones.</span></div></div>
+     <div class="step"><div class="stepnum">3</div><div><b>Genera una primera versión</b><br><span style="color:#9fb0c5">Utiliza la IA como punto de partida.</span></div></div>
+     <div class="step"><div class="stepnum">4</div><div><b>Comprueba</b><br><span style="color:#9fb0c5">Busca errores, datos inventados y problemas.</span></div></div>
+     <div class="step"><div class="stepnum">5</div><div><b>Mejora</b><br><span style="color:#9fb0c5">Edita, prueba y mide el resultado.</span></div></div>
+    </div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="guia">
+ <div class="container">
+  <div class="eyebrow">Guía para empezar</div>
+  <h2>De una idea a un proyecto real</h2>
+  <p class="sectionintro">No necesitas empezar comprando muchas herramientas. Primero identifica un problema y demuestra que puedes solucionarlo.</p>
+  <div class="grid">
+   <article class="card"><h3>1. Elige un problema</h3><p>Piensa en una tarea que personas o negocios hagan repetidamente. Pregunta cuánto tiempo consume, qué errores aparecen y qué resultado esperan.</p></article>
+   <article class="card"><h3>2. Aprende una herramienta</h3><p>Escoge una herramienta de IA y aprende sus funciones principales. Practica con casos reales en vez de acumular decenas de aplicaciones.</p></article>
+   <article class="card"><h3>3. Crea una demostración</h3><p>Haz un ejemplo antes/después. Una demostración concreta comunica mejor el valor de un servicio que una promesa genérica.</p></article>
+   <article class="card"><h3>4. Mide el resultado</h3><p>Calcula tiempo ahorrado, número de tareas automatizadas, calidad del resultado o coste. Las métricas ayudan a saber si una idea merece la pena.</p></article>
+  </div>
+  <div class="callout"><b>Importante:</b> ninguna de estas estrategias garantiza ingresos. Los resultados dependen de la demanda, la calidad del trabajo, la competencia, el tiempo dedicado y muchos otros factores.</div>
+ </div>
+</section>
+
+<section id="sobre">
+ <div class="container">
+  <div class="eyebrow">DineroIA</div>
+  <h2>Información clara antes que promesas fáciles.</h2>
+  <div class="wide">
+   <div><p>DineroIA es un proyecto educativo sobre inteligencia artificial y oportunidades digitales. Nuestro objetivo es explicar herramientas y modelos de trabajo de forma sencilla, con ejemplos prácticos y expectativas realistas.</p><p>La IA está cambiando la forma de investigar, escribir, programar, diseñar y automatizar procesos. Aprender a utilizarla puede ser una ventaja, pero no sustituye el esfuerzo, la creatividad, la comprobación de información ni el conocimiento del mercado.</p></div>
+   <div class="panel"><h3>Principios</h3><ul><li>Sin promesas de dinero fácil.</li><li>Explicaciones comprensibles.</li><li>Revisión humana de información importante.</li><li>Experimentos antes de gastar dinero.</li><li>Transparencia sobre limitaciones.</li></ul></div>
+  </div>
+ </div>
+</section>
+
+<section id="contacto">
+ <div class="container">
+  <div class="eyebrow">Contacto</div>
+  <h2>¿Tienes una idea o una pregunta?</h2>
+  <p class="sectionintro">Puedes escribirnos para sugerir un tema, informar de un error o proponer una herramienta para analizar.</p>
+  <div class="panel" style="margin-top:25px;max-width:650px">
+   <h3>DineroIA</h3>
+   <p>Email: <a style="color:var(--green)" href="mailto:nikolakovacevicbektas@gmail.com">nikolakovacevicbektas@gmail.com</a></p>
+   <p style="font-size:14px;color:#8293a8">Intentamos responder de forma clara y responsable.</p>
+  </div>
+ </div>
+</section>
+
+<footer>
+ <div class="container">
+  <div class="footergrid">
+   <div><div class="logo">Dinero<span>IA</span></div><p>Aprende a utilizar la inteligencia artificial para crear oportunidades digitales de forma responsable.</p></div>
+   <div><b>Contenido</b><div class="footerlinks"><a href="#formas">6 formas de ganar dinero</a><a href="#ia">Cómo funciona la IA</a><a href="#guia">Guía para empezar</a></div></div>
+   <div><b>Legal</b><div class="footerlinks"><a href="#contacto">Contacto</a><a href="#">Privacidad</a><a href="#">Términos</a></div></div>
+  </div>
+  <p class="disclaimer">© 2026 DineroIA. Información educativa. Los contenidos no constituyen asesoramiento financiero ni garantizan resultados económicos.</p>
+ </div>
+</footer>
+</body>
+</html>
